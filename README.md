@@ -172,4 +172,4 @@ The tests cover:
 
 ## License
 
-This project is part of the Zone01 Kisumu curriculum.
+This project is part of the Zone01 curriculum.
