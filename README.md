@@ -11,7 +11,7 @@ The project handles various edge cases, including multi-line inputs, special cha
 * **[Ismail](https://github.com/som3a23-web)**
 * **[Anas](https://github.com/Anasmoner2022)**
 * **[Omnia](https://github.com/OmniaAbdoun)**
-* **[Amr](https://github.com/YOUR_ACTUAL_GITHUB)**
+* **[Amr](https://github.com/AmrYassin10)**
 
 ## Usage: How to Run
 
