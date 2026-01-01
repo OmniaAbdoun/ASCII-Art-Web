@@ -77,8 +77,6 @@ func asciiHandler(w http.ResponseWriter, r *http.Request) {
 	banner := r.FormValue("banner")
 	var output string
 
-	if inputStr != "" || banner != "" {
-
 		if !isValidBanner(banner) {
 			w.WriteHeader(http.StatusBadRequest)
 			badRequestTmpl.Execute(w, nil)
@@ -98,18 +96,17 @@ func asciiHandler(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 		bannerSelectedConv := string(bannerSelected)
-		if bannerSelectedConv == "" {
+		sliceBanner := strings.Split(bannerSelectedConv, "\n")
+		if len(sliceBanner) != 855 {
 			w.WriteHeader(http.StatusInternalServerError)
 			internalErrorTmpl.Execute(w, nil)
 			return
 		}
 		replaceInput := strings.ReplaceAll(inputStr, "\r\n", "\n")
 		splitInput := strings.Split(replaceInput, "\n")
-		sliceBanner := strings.Split(bannerSelectedConv, "\n")
 
 		art := ascii.DrawingInput(splitInput, sliceBanner)
 		output = art
-	}
 
 	data := PageData{
 		Input:  inputStr,
