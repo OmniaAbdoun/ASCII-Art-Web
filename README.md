@@ -23,7 +23,7 @@ The project handles various edge cases, including multi-line inputs, special cha
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/som3a23-web/Ascii-Art-Web.git
+git clone https://01.nextera.education/git/oabdoun/Ascii-Art-Web.git
 cd Ascii-Art-Web
 ```
 
